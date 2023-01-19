@@ -5,7 +5,7 @@ This half-day course explains why pipeline tools such as [make](https://www.gnu.
 The `snakemake` code was created by [Isaac Ellman](https://github.com/Ellmen).
 
 ## Feedback survey
-If you have taken this course and are willing to provide a answers to a short (1-2 minute) survey, please fill these in [here](https://forms.gle/SAYMoqX6AmQBLrwNA).
+If you have taken this course and are willing to provide a answers to a short (1-2 minute) survey, please fill these in [here](https://forms.gle/r9QZaupsgZvKfBn89).
 
 ## Lecture and problem sets
 There is a short lecture [here](presentations/pipeline_tools.html).
