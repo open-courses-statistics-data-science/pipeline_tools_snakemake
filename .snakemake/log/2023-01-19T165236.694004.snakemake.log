@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count    min threads    max threads
+----------------  -------  -------------  -------------
+all                     1              1              1
+fit_linear_model        1              1              1
+plot_regression         1              1              1
+total                   3              1              1
+
+Select jobs to execute...
+
+[Thu Jan 19 16:52:36 2023]
+rule fit_linear_model:
+    input: data/cleaned/airquality_cleaned.csv
+    output: models/linear_model.joblib
+    jobid: 2
+    reason: Code has changed since last execution
+    resources: tmpdir=/var/folders/_j/qpvxcf6100n6zpbckxsyyc980000gn/T
+
+[Thu Jan 19 16:52:38 2023]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Thu Jan 19 16:52:38 2023]
+rule plot_regression:
+    input: models/linear_model.joblib
+    output: outputs/reg_plot.pdf
+    jobid: 1
+    reason: Missing output files: outputs/reg_plot.pdf; Input files updated by another job: models/linear_model.joblib
+    resources: tmpdir=/var/folders/_j/qpvxcf6100n6zpbckxsyyc980000gn/T
+
+[Thu Jan 19 16:52:38 2023]
+Error in rule plot_regression:
+    jobid: 1
+    input: models/linear_model.joblib
+    output: outputs/reg_plot.pdf
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-01-19T165236.694004.snakemake.log

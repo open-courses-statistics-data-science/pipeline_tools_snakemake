@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count    min threads    max threads
+----------------  -------  -------------  -------------
+all                     1              1              1
+fit_linear_model        1              1              1
+total                   2              1              1
+
+Select jobs to execute...
+
+[Thu Jan 19 16:44:33 2023]
+rule fit_linear_model:
+    input: data/cleaned/airquality_cleaned.csv
+    output: models/linear_model.joblib
+    jobid: 1
+    reason: Missing output files: models/linear_model.joblib
+    resources: tmpdir=/var/folders/_j/qpvxcf6100n6zpbckxsyyc980000gn/T
+
+[Thu Jan 19 16:44:35 2023]
+Error in rule fit_linear_model:
+    jobid: 1
+    input: data/cleaned/airquality_cleaned.csv
+    output: models/linear_model.joblib
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-01-19T164433.794306.snakemake.log

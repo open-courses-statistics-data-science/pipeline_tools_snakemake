@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule plot_regression in file /Users/isaac/Code/sabs/sabs_modules/stats/workflow/Snakefile, line 21:
+Missing input files for rule plot_regression:
+    output: outputs/reg_plot.pdf
+    affected files:
+        models/linear_model.joblibdata/cleaned/airquality_cleaned.csv

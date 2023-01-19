@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+clean_data        1              1              1
+total             1              1              1
+
+Select jobs to execute...
+
+[Thu Jan 19 16:23:10 2023]
+rule clean_data:
+    input: data/raw/airquality.csv
+    output: data/cleaned/airquality_cleaned.csv
+    jobid: 0
+    reason: Missing output files: data/cleaned/airquality_cleaned.csv
+    resources: tmpdir=/var/folders/_j/qpvxcf6100n6zpbckxsyyc980000gn/T
+
+[Thu Jan 19 16:23:11 2023]
+Error in rule clean_data:
+    jobid: 0
+    input: data/raw/airquality.csv
+    output: data/cleaned/airquality_cleaned.csv
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-01-19T162310.487333.snakemake.log
