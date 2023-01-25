@@ -1,0 +1,9 @@
+name: pipeline_tools_snakemake
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - snakemake
+  - scikit-learn
+  - matplotlib
