@@ -29,3 +29,18 @@ TODO
 
 - basic Python skills
 - some experience of having done data analysis
+
+
+## Setup
+In order to run the code in this repository, `snakemake` and some other Python packages must be installed.
+
+### Conda
+A [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) environment can be created and activated from the `environment.yml` using the following commands:
+1. `$ conda env create --file environment.yml`
+2. `$ conda activate pipeline_tools_snakemake`
+
+From this environment `snakemake` commands can be executed.
+
+### Pip
+Since `snakemake` has non-Python dependencies, installation using `pip` is not recommended.
+See [`snakemake` docs](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html#installation-via-pip) for more information. 
