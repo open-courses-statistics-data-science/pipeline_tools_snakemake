@@ -23,7 +23,12 @@ TODO
 
 ## Applied target steps
 
-TODO
+1. Clone this repo <br> `$ git clone https://github.com/open-courses-statistics-data-science/pipeline_tools_snakemake.git`
+2. Move to that directory <br> `$ cd pipeline_tools_snakemake`
+3. Create the Conda environment and activate it (see [Setup](#setup) section below) <br> `$ conda env create --file environment.yml` <br> `$ conda activate pipeline_tools_snakemake`
+4. Create a visualiation of the whole process DAG using the commandline (find more information [here](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html#step-4-indexing-read-alignments-and-visualizing-the-dag-of-jobs)) <br> You will need to open this using your operating system <br> `$ snakemake --dag all | dot -Tsvg > dag.svg`
+5. Run the full pipeline <br> `$ snakemake --cores 1 all`
+6. Create the visualisation again to see the difference once executed <br> `$ snakemake --dag all | dot -Tsvg > dag_executed.svg`
 
 ## Prerequisites
 

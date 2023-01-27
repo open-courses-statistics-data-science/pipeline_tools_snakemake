@@ -7,3 +7,4 @@ dependencies:
   - snakemake
   - scikit-learn
   - matplotlib
+  - graphviz
