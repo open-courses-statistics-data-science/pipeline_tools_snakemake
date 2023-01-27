@@ -2,26 +2,23 @@
 
 This half-day course explains why pipeline tools such as [make](https://www.gnu.org/software/make/), [snakemake](https://snakemake.readthedocs.io/en/stable/tutorial/short.html) and [targets](https://books.ropensci.org/targets/) are indispensible tools in (reproducible) data analyses.
 
-The `snakemake` code was created by [Isaac Ellman](https://github.com/Ellmen).
+
+There is a short lecture [here](presentations/pipeline_tools.html).
+
+The `snakemake` code was created by [Isaac Ellman](https://github.com/Ellmen) and [Kevin Donkers](https://github.com/kaedonkers) created the Conda environment for running the code and contributed to this tutorial more broadly.
 
 ## Feedback survey
 If you have taken this course and are willing to provide a answers to a short (1-2 minute) survey, please fill these in [here](https://forms.gle/r9QZaupsgZvKfBn89).
 
-## Lecture and problem sets
-There is a short lecture [here](presentations/pipeline_tools.html).
-
-Applied example: there are two folders:
-
-TODO
-
 ## Steps of analysis
+The aim of this course is to create a Snakemake pipeline for the below data analysis.
 
 1. get and clean data
 2. fit a model: `ozone ~ temperature`
 3. plot the model's fit versus data
 4. diagnose any issues with model fit; if necessary, change the model and rerun the above steps
 
-## Applied target steps
+## Steps to use Snakemake
 
 1. Clone this repo <br> `$ git clone https://github.com/open-courses-statistics-data-science/pipeline_tools_snakemake.git`
 2. Move to that directory <br> `$ cd pipeline_tools_snakemake`
@@ -34,7 +31,6 @@ TODO
 
 - basic Python skills
 - some experience of having done data analysis
-
 
 ## Setup
 In order to run the code in this repository, `snakemake` and some other Python packages must be installed.
